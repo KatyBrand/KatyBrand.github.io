@@ -1,0 +1,54 @@
+/* Tablet */
+@media (max-width: 768px) /* Ẩn ảnh avatar khi cỡ màn hình nhỏ hơn 768px */ {
+  .nav-bar img {
+    display: none;
+  }
+  .nav-bar {
+    margin: 0;
+  }
+  /* Thêm padding để dễ nhìn hơn  */
+  .about-section {
+    padding: 8px;
+  }
+  #section,
+  #about {
+    padding-top: 12px;
+    max-width: 768px;
+    margin: 0;
+  }
+  #target {
+    padding-right: 8px;
+  }
+  #personal-info {
+    padding-left: 32px;
+  }
+  /* Sửa layout để hiện 2 cột trong phần Kinh Nghiệm, Học vấn, etc và Chứng chỉ, giải thưởng*/
+  .job-info,
+  .certificate-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Đổi layout cho các item trong phần Chứng chỉ */
+  .certificate-item {
+    grid-template-columns: 1fr;
+  }
+  /* Đổi layout của Timline trong từng dự án (link liên kết với Project Charter được gắn ở đây) */
+  .time-line {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 0px 12px;
+  }
+  /* Đổi cell Vị trí làm việc trong phần Timeline */
+  .position {
+    grid-area: 2/2/3/3;
+    grid-column: 2 / span 3;
+  }
+  /* Đổi cell Công ty trong phần Timeline, dùng span để tạo không gian cho icon và text chung 1 dòng */
+  .company {
+    grid-column: 2 / span 3;
+  }
+  /* Để gap nhỏ hơn cho dễ nhìn khi màn hình nhỏ */
+  .project-container {
+    gap: 18px;
+  }
+}

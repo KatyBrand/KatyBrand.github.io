@@ -1,0 +1,62 @@
+/* Laptop */
+@media (max-width: 1500px) /* Chuyển một số code cũ vô để nó chỉ hiển thị khi cỡ màn hình lớn */ {
+  section {
+    padding: 32px 32px;
+  }
+  #nav-bar {
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0;
+    margin: 0 100px 0 100px;
+  }
+  #about {
+    grid-template-columns: 50% 1fr;
+    margin-top: 32px;
+  }
+  .job-info {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+  }
+  section {
+    width: auto;
+    margin: auto;
+    padding: 32px;
+  }
+  .certificate-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .certificate-item {
+    grid-template-columns: 2fr 3fr;
+  }
+  .certificate-img img {
+    width: 100%;
+  }
+  .line {
+    grid-column: 1/-1;
+    height: 1px;
+    background-color: orange;
+  }
+  .project-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+  }
+  .time-line {
+    display: flex;
+    gap: 32px;
+    padding: 0px 12px;
+  }
+  .project-container {
+    gap: 32px;
+  }
+  .vertical {
+    position: absolute;
+    top: 12px;
+    bottom: 50%;
+    width: 1px;
+    background-color: orange;
+    left: 50%;
+    margin-bottom: 48px;
+  }
+}

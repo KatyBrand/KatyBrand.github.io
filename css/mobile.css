@@ -1,0 +1,81 @@
+/* Mobile */
+@media (max-width: 500px) {
+  /* Sửa padding cho dễ nhìn */
+  section.nav-bar {
+    padding: 24px 0 24px 24px;
+  }
+  section {
+    padding: 32px 8px 12px 8px;
+  }
+  /* Chỉnh nav-bả để hiển thị theo chiều dọc, thêm gap, padding cho dễ nhìn */
+  #nav-bar {
+    margin: 0;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  .nav-bar {
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+  .about-section {
+    padding-top: 12px;
+  }
+  /* Đổi thành layout 1 cột cho phù hợp với màn hình điện thoại */
+  #about {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  #personal-info {
+    padding-left: 12px;
+  }
+  /* Layout 1 cột cho phần Kinh nghiệm, Học vấn */
+  .job-info {
+    grid-template-columns: 1fr;
+    padding-top: 32px;
+  }
+  .job-info p {
+    margin-bottom: 8px;
+  }
+  /* Set height để nội dung bên trong không bị che mất */
+  #hobby {
+    height: 218px;
+  }
+  /* Set layout hiện 1 cột phần Chứng chỉ, giải thưởng */
+  .certificate-container {
+    grid-template-columns: 1fr;
+    padding: 8px;
+  }
+  /* Thêm padding cho đẹp */
+  h1#certificate {
+    padding-left: 8px;
+  }
+  /* Ẩn thanh timline và gạch màu cam */
+  .vertical {
+    display: none;
+  }
+  .line {
+    display: none;
+  }
+  /* Tạo border cam bên dưới cho chứng chỉ, giải thưởng */
+  .certificate-item {
+    padding-bottom: 18px;
+    border-bottom: var(--secondary-color) 1px solid;
+  }
+  /* Đổi layout 1 cột cho phần Dự án */
+  .project-container {
+    grid-template-columns: 1fr;
+    gap: 52px;
+  }
+  /* Đổi layout 1 cột cho các item trong timeline */
+  .time-line {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0px 12px;
+  }
+  /* Thu nhỏ viền cho div year */
+  .year {
+    width: 14%;
+  }
+}
